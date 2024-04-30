@@ -1,0 +1,95 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+
+    - Font sizes (px)
+          10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+          
+    - Spacing system (px)
+          2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    -Colors
+          background-color: #1e1e1e;
+          color: aliceblue;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* padding: 8px; */
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: 4px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+input {
+  height: 3.2rem;
+  width: 24rem;
+  padding: 0.6rem;
+  border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+button {
+  /* border-radius: 1.2rem; */
+  padding: 0.8rem;
+  width: 10rem;
+  border: none;
+  cursor: pointer;
+  /* COLORS */
+  color: #1e1e1e;
+  background-color: aliceblue;
+}
+
+a {
+  /* COLORS */
+  background-color: #1e1e1e;
+  color: aliceblue;
+  padding: 6px 18px;
+
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+span {
+  color: #020202;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* HELPER CLASSES */
+.mar-btm-small {
+  margin-bottom: 1.2rem;
+}
+
+.mar-top-medium {
+  margin-top: 2.2rem;
+}
+
+.pad-all-small {
+  padding: 6px;
+}
+
+.border-for-div {
+  border: 2px solid black;
+}
+/* FORM CLASSES START */

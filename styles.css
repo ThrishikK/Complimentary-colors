@@ -1,0 +1,192 @@
+/* SET - 1 COLORS
+        color: #1e1e1e;
+        background-color: aliceblue;
+
+  SET - 2 COLORS
+        color: aliceblue;
+        background-color: #1e1e1e;    
+
+*/
+
+.grid-container {
+  font-family: "Merriweather", serif;
+  /* padding: 8px; */
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 5vw);
+  /* row-gap: 1rem; */
+}
+
+.column {
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
+.column--1 {
+  grid-column: 1 / span 5;
+  grid-row: 1 / -1;
+  /* COLORS */
+  color: #1e1e1e;
+  background-color: aliceblue;
+}
+
+.pallette-container {
+}
+
+.pallette-colors {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.color {
+  height: 16rem;
+  width: 20rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+
+  /* flex */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* text-align: center; */
+}
+
+.color__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* background-image: linear-gradient(); */
+}
+
+.color__face p {
+}
+
+.color:hover {
+  transform: rotateY(0.5turn);
+}
+
+.color__face--back {
+  transform: rotateY(0.5turn);
+}
+
+.color-1-1 {
+  background-color: aliceblue;
+  border: 1px solid #1e1e1e;
+}
+
+.color-1-2 {
+  background-color: #1e1e1e;
+}
+.color-1-3 {
+  background-color: #020202;
+}
+
+/* COLUMN - 2 STYLES */
+
+.column--2 {
+  grid-column: 6 / span 5;
+  grid-row: 1 / -1;
+  /* COLORS */
+  color: aliceblue;
+  background-color: #1e1e1e;
+}
+
+.form-container {
+  height: 14.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column--2__anchor {
+  /* COLORS */
+  color: #1e1e1e;
+  background-color: aliceblue;
+}
+
+.color-2-1 {
+  background-color: #1e1e1e;
+  border: 1px solid aliceblue;
+}
+.color-2-2 {
+  background-color: aliceblue;
+}
+.color-2-3 {
+  background-color: #020202;
+}
+
+.span-2 {
+  color: rgb(255, 255, 255);
+}
+
+/* =========================================================PREVIOS MODEL===================================== 
+
+.head-container {
+  color: #1e1e1e;
+  background-color: aliceblue;
+
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 2;
+}
+
+
+.complimentary-container {
+  width: 45rem;
+}
+
+.complimentary-container--1 {
+  color: #1e1e1e;
+  background-color: aliceblue;
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 4;
+}
+
+.complementary-img-container {
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 4;
+}
+
+.complimentary-container--2 {
+  color: aliceblue;
+  background-color: #1e1e1e;
+  grid-column: 7 / span 4;
+  grid-row: 3 / span 4;
+  justify-self: end;
+}
+
+
+.color-container--1 {
+  grid-column: 1 / span 5;
+  grid-row: 7 / span 4;
+}
+
+.color-container--2 {
+  grid-column: 6 / span 5;
+  grid-row: 7 / span 4;
+}
+
+.complementary-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+
+*/
